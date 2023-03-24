@@ -1,0 +1,35 @@
+#body {
+    background-color: rgb(110, 103, 103);
+}
+
+#title {
+    color: rgb(113, 37, 37);
+    max-height: 10px;
+    font-size: 30px;
+}
+
+#date {
+    color: rgb(0, 0, 0);
+    margin-top: 100px;
+}
+
+#type {
+    color: rgb(0, 0, 0);
+    
+}
+
+#article {
+    border: 3px solid black;
+    flex-grow: 1;
+    max-width: 300px;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#errorMessage {
+    color: rgb(115, 35, 35);
+}
