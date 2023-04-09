@@ -11,13 +11,14 @@ const MovieAPI = () => {
 
     const [search, setSearch] = useState('super');
     
-    const [type, setType] = useState('all');
+    const [type, setType] = useState('');
 
     const [errorMessage, setErrorMessage] = useState('')
 
+
     const fetchMovies  = async () =>{
         try {
-            const response = await fetch(`http://www.omdbapi.com/?apikey=d3ef435a&s=${search}`);
+            const response = await fetch(`http://www.omdbapi.com/?apikey=d3ef435a&s=${search}&type=${type}`);
             const data = await response.json();
             
             data.Response === "True" ?
@@ -30,7 +31,7 @@ const MovieAPI = () => {
 
     useEffect(() => {
         fetchMovies();
-    }, [search])
+    }, [search, type])
 
     function handleChange (e) {
         e.preventDefault();
@@ -41,12 +42,12 @@ const MovieAPI = () => {
         e.preventDefault();
         setType(e.target.value);
     }    
-    
+    console.log(type)
 
   return (
     <div>
         <Form handleChange={handleChange} search={search} handleChangeSelect={handleChangeSelect}/>
-        {movies.length > 0 ? <MovieList movies={movies} handleChangeSelect={handleChangeSelect} type={type}/>
+        {movies.length > 0 ? <MovieList movies={movies} />
         : <p id={formStyle.errorMessage}>{errorMessage}</p>}
     </div>
   )

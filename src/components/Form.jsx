@@ -7,11 +7,11 @@ const Form = (props) => {
         
         <label>Choose type:</label>
         
-        <select onChange={props.handleChangeSelect} value={props.type}>
-          <option value="all">All</option>
-          <option value="movie">Movies</option>
-          <option value="series">Series</option>
-          <option value="game">Games</option>
+        <select onChange={props.handleChangeSelect} >
+          <option value="" >All</option>
+          <option value="movie" >Movies</option>
+          <option value="series" >Series</option>
+          <option value="game" >Games</option>
         </select>
     </form>
    

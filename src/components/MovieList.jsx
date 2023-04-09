@@ -6,7 +6,7 @@ const MovieList = (props) => {
   return (
     <div id={formStyle.container}>
         {props.movies.map((movie) =>
-          <Movie movie={movie} key={movie.imdbID} handleChangeSelect={props.handleChangeSelect} type={props.type}/>
+          <Movie movie={movie} key={movie.imdbID} />
         )}
     </div>
   )
