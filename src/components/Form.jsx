@@ -21,13 +21,11 @@ const Form = (props) => {
 export default Form
 
 const formStyle = {
-  // Style for the form element
-  marginTop: '20px', // Add spacing above the form
-  marginBottom: '20px', // Add spacing below the form
+  marginTop: '20px', 
+  marginBottom: '20px', 
 };
 
 const inputStyle = {
-  // Style for the input element
   padding: '10px',
   marginRight: '10px',
   borderRadius: '4px',
@@ -36,12 +34,10 @@ const inputStyle = {
 };
 
 const labelStyle = {
-  // Style for the label element
   marginRight: '10px',
 };
 
 const selectStyle = {
-  // Style for the select element
   padding: '10px',
   borderRadius: '4px',
   border: '1px solid #ccc',

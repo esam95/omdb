@@ -11,13 +11,13 @@ const Header = () => {
 export default Header
 
 const headerStyle = {
-  backgroundColor: '#222', // Header background color
+  backgroundColor: '#222', 
   padding: '20px',
   textAlign: 'center',
 };
 
 const titleStyle = {
-  fontSize: '36px', // Header title font size
-  fontFamily: 'Arial, sans-serif', // Stylish font family
-  color: '#61dafb', // A vibrant blue color
+  fontSize: '36px', 
+  fontFamily: 'Arial, sans-serif', 
+  color: '#61dafb', 
 };

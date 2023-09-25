@@ -1,15 +1,13 @@
-/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Set a background color for the entire body */
   body {
-    background-color: #333; /* You can adjust the color as needed */
-    color: #fff; /* Text color */
-    font-family: Arial, sans-serif; /* Choose an appropriate font */
+    background-color: #333; 
+    color: #fff; 
+    font-family: Arial, sans-serif; 
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -18,60 +16,55 @@
     text-align: center;
   }
   
-  /* Header Styles */
   header {
-    background-color: #222; /* Header background color */
+    background-color: #222; 
     padding: 20px;
   }
   
   header h1 {
-    font-size: 36px; /* Header title font size */
-    color: #fff; /* Header title color */
+    font-size: 36px; 
+    color: #fff; 
   }
   
-  /* Movie Container Styles */
   #container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Gap between movies */
+    gap: 20px; 
   }
   
-  /* Movie Card Styles */
   article {
-    border: 1px solid #444; /* Border for movie cards */
-    background-color: #111; /* Background color for movie cards */
+    border: 1px solid #444; 
+    background-color: #111; 
     max-width: 300px;
     padding: 20px;
     text-align: left;
   }
   
   article h1 {
-    font-size: 24px; /* Movie title font size */
-    color: #ff6f61; /* Movie title color */
+    font-size: 24px; 
+    color: #ff6f61; 
     margin-bottom: 10px;
   }
   
   article p {
-    font-size: 18px; /* Font size for date and type */
-    color: #ccc; /* Color for date and type */
+    font-size: 18px; 
+    color: #ccc;
     margin: 5px 0;
   }
   
   article img {
-    max-width: 100%; /* Ensure images fit within the card */
+    max-width: 100%;
     height: auto;
     display: block;
     margin-top: 10px;
   }
   
-  /* Error Message Styles */
   #errorMessage {
-    color: #ff5555; /* Error message color */
-    font-size: 18px; /* Font size for error messages */
+    color: #ff5555; 
+    font-size: 18px; 
   }
   
-  /* Responsive Design */
   @media (max-width: 768px) {
     article {
       max-width: 100%;
